@@ -12,7 +12,7 @@ The goal is to automatically detect the emotional state of a speaker based on th
 
 ##  Dataset
 
-- Emotion-labeled speech audio files
+- Emotion-labeled speech and song audio files
 - Labels include: `angry`, `happy`, `sad`, `neutral`, `calm`, `fearful`, `disgust`, `surprised`
 - Audio files were preprocessed into spectrograms
 
@@ -21,14 +21,14 @@ The goal is to automatically detect the emotional state of a speaker based on th
 ## Preprocessing Methodology
 
 1. **Audio Loading**:  
-   Used `librosa` to load `.wav`/`.mp3` files at a consistent sample rate (e.g., 22050 Hz)
+   Used `librosa` to load `.wav` files at a consistent sample rate (e.g., 22050 Hz)
 
 2. **Spectrogram Generation**:  
    - Created **Mel-spectrograms** using `librosa.feature.melspectrogram`
    - Converted power spectrogram to decibel units with `librosa.power_to_db`
 
 3. **Image Conversion**:  
-   - Saved spectrograms as grayscale or RGB images (`.png` or `.jpg`) of size `128x128`
+   - Saved spectrograms as grayscale or RGB images (`.png` ) of size `128x128`
    - Organized images into labeled folders for training
 
 
