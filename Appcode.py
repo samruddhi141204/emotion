@@ -18,7 +18,7 @@ import matplotlib.pyplot as plt
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.image import img_to_array
 
-model = load_model("emotion_cnn_model.h5")
+model = tf.keras.models.load_model("emotion_cnn_model.h5")
 img_size = (128, 128)
 emotion_labels = ['angry', 'calm', 'disgust', 'fearful', 'happy', 'neutral', 'sad', 'surprised']
 
