@@ -14,7 +14,7 @@ FIXED_FRAMES = 128
 
 # -------------------- Load Model + Encoder --------------------
 model = tf.keras.models.load_model("emotion_cnn_mel.keras")  # or .h5 if you saved in legacy format
-le = joblib.load("label_encoder.pkl")
+le = joblib.load("emotion_cnn_model.h5")
 
 # -------------------- Feature Extraction --------------------
 def extract_log_mel(file_path):
