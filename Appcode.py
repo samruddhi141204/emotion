@@ -59,4 +59,5 @@ if uploaded_file:
 
     st.success(f"**Predicted Emotion:** {emotion_labels[predicted_label]}")
     st.info(f"Confidence: {confidence * 100:.2f}%")
+    st.image(input_img[0], caption="Spectrogram", use_column_width=True)
   
