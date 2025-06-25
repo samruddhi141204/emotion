@@ -35,9 +35,9 @@ The goal is to automatically detect the emotional state of a speaker based on th
 
 ---
 
-## 🧪 Model Pipeline
+##  Model Pipeline
 
-### 🧱 CNN Architecture
+###  CNN Architecture
 - Input: 128×128 Spectrogram Images
 - Layers:
   - Convolutional layers with ReLU + MaxPooling
@@ -87,7 +87,10 @@ weighted avg       0.79      0.78      0.78       491
 === Accuracy: 78.21%
 === Macro F1 Score: 78.83%
 
-> *Note: Metrics were computed on the test set using stratified split*
+> *Note: Metrics were computed on the test set using stratified split
+
+# Link to the data set and all the file
+https://drive.google.com/drive/folders/1Q-M5jn1S-jLzxNSZfMjNQgvgQcdi1neK?usp=drive_link
 
 
 
